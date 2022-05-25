@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/formFornecedor.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../JS/chart.js"></script>
+    <title>JS Corporation</title>
+</head>
+
+<body>
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+            {
+                "symbols";
+                [{
+                    "proName": "FOREXCOM:SPXUSD",
+                    "title": "S&P 500"
+                }, {
+                    "proName": "FOREXCOM:NSXUSD",
+                    "title": "US 100"
+                }, {
+                    "proName": "FX_IDC:EURUSD",
+                    "title": "EUR/USD"
+                }, {
+                    "proName": "BITSTAMP:BTCUSD",
+                    "title": "Bitcoin"
+                }, {
+                    "proName": "BITSTAMP:ETHUSD",
+                    "title": "Ethereum"
+                }],
+                "showSymbolLogo";
+                true,
+                "colorTheme";
+                "light",
+                "isTransparent";
+                false,
+                "displayMode";
+                "adaptive",
+                "locale";
+                "br"
+            }
+        </script>
+    </div>
+    <!-- TradingView Widget END -->
+    <div class="container">
+        <div class="menu">
+            <div class="logo">
+                <i class="bx bxl-nodejs"></i>
+                <h3>Corporation</h3>
+            </div>
+            <div class="item1">
+                <div class="h2">
+                    <h2>TS</h2>
+                </div>
+                <div class="txt">
+                    <h4>Dlex Designs</h4>
+                    <h6>General Team</h6>
+                </div>
+                <div class="icon">
+                    <i class="bx bx-expand-vertical"></i>
+                </div>
+            </div>
+            <div class="item2">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="../HTML/home.html">
+                                <i class='bx bx-home'></i>
+                                <span>Home</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="bx bxs-bar-chart-square"></i>
+                                <span>Overview</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="bx bxs-conversation"></i>
+                                <span>Chat</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="bx bxs-group"></i>
+                                <span>Team</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h5>Cadastros</h5>
+                        </li>
+
+                        <li>
+                            <a href="../HTML/formUser.html">
+                                <i class='bx bx-user-circle'></i>
+                                <span>Usuários</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../HTML/formProdutos">
+                                <i class="bx bx-error"></i>
+                                <span>Produtos</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../HTML/formFornecedor.html">
+                                <i class="bx bxs-cog"></i>
+                                <span>Fornecedores</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="item3">
+                <div class="txt1">
+                    <span id="strong">Storage</span>
+                    <span id="standard">Upgrade</span>
+                </div>
+                <div class="txt2">
+                    <span id="strong">3.4 GB</span>
+                    <span id="standard">of 15 GB</span>
+                </div>
+            </div>
+            <div class="item4">
+                <div class="img">
+                    <img src="../IMG/Stark icon.jpeg" alt="Stark icon" />
+                </div>
+                <div class="txt">
+                    <h4>Tony Stark</h4>
+                </div>
+                <div class="icon">
+                    <i class="bx bx-expand-vertical"></i>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+
+            <div class="titulo">
+                <h1>Cadastro de Fornecedores</h1>
+            </div>
+            <form action="">
+                <div class="campo">
+                    <div class="razao">
+                        <label for="razao"><h2>Razão social:</h2></label>
+                        <input type="text" placeholder="Digite a razão social" required />
+                    </div>
+                    <div class="fantasia">
+                        <label for="fantasia"><h2>Nome fantasia:</h2></label>
+                        <input type="text" placeholder="Digite o nome fantasia" required />
+                    </div>
+                </div>
+                <div class="campo">
+                    <div class="cnpj">
+                        <label for="cnpj"><h2>CNPJ:</h2></label>
+                        <input type="text" placeholder="Digite o CNPJ" required />
+                    </div>
+                    <div class="telefone">
+                        <label for="telefone"><h2>Telefone: </h2></label>
+                        <input type="password" placeholder="(XX) XXXX-XXXX" required />
+                    </div>
+                </div>
+                <div class="campo">
+                    <div class="email">
+                        <label for="email"><h2>E-mail:</h2></label>
+                        <input type="email" placeholder="ex. email@email.com" required />
+                    </div>
+                    <div class="email">
+                        <label for="email"><h2>Confirmar E-mail:</h2></label>
+                        <input type="email" placeholder="Confirmar E-mail" required />
+                    </div>
+                </div>
+                <input class="button" type="submit" />
+            </form>
+
+        </div>
+    </div>
+    <div class="tradingview-widget-copyright">
+        <span class="blue-text">Dashboards</span>
+        </a>
+        por Misael e Vitor - 2022 &copy
+    </div>
+</body>
+
+</html>
