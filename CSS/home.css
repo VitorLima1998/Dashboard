@@ -457,7 +457,7 @@ i {
 }
 /* Fim Card 2 */
 
-/* Card 1 */
+/* Card 3 */
 .container .content .card3 {
   display: flex;
   flex-wrap: wrap;
@@ -516,7 +516,7 @@ i {
   border-radius: 2rem;
   background: var(--bg-color-bar5);
 }
-/* Fim Card 1 */
+/* Fim Card 3 */
 /* -------------------------------------------------------------------------------------------------- */
 
 /* Início Media Query (Responsividade) */
@@ -542,6 +542,30 @@ i {
     height: 1.5rem;
     border-radius: 0 1rem 1rem 0;
     width: 8rem;
+  }
+
+  .container .content .card1 .text {
+    display: none;
+  }
+
+  .container .content .card1 .bar {
+    display: none;
+  }
+
+  .container .content .card2 .text {
+    display: none;
+  }
+
+  .container .content .card2 .bar {
+    display: none;
+  }
+
+  .container .content .card3 .text {
+    display: none;
+  }
+
+  .container .content .card3 .bar {
+    display: none;
   }
 }
 /* Fim Media Query telas menores */
