@@ -1,0 +1,312 @@
+:root {
+    /* Background color */
+    --bg-color-body: #dfe3ec;
+    --bg-color-content: #f8f8fa;
+    --bg-color-menu: #3c38ce;
+    --bg-color-border: #eee;
+    --bg-color-box: #ffffff;
+    --bg-color-span: #ffecb3;
+    --bg-color-icon: #ffffff;
+    --bg-color-avatar: #ecd348;
+    --bg-color-border-avatar: #4a4de6;
+    --bg-color-storage: #342bc2;
+    --bg-color-button: #4a4de6;
+    --bg-color-bar1: #ebebf5;
+    --bg-color-bar2: #caccf7;
+    --bg-color-bar3: #828aed;
+    --bg-color-bar4: #4a4de6;
+    /* Text color */
+    --text-white: #ffffff;
+    --text-menu: #7a76d5;
+    --text-orange: #e6881d;
+    --text-grey: #909090;
+    --text-sucess: #3bcf40;
+    --text-danger: #c60a26;
+    --text-list1: #ebebf5;
+    --text-list2: #caccf7;
+    --text-list3: #828aed;
+    --text-list4: #4a4de6;
+    --number-progressbar: #4a4de6;
+    /* Button color*/
+    --btn-bgicon: #7274eb;
+    --btn-bgcolor: #eaeafd;
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    appearance: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 1rem;
+    background: var(--bg-color-body);
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.content {
+    width: 80%;
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    border-radius: 0 1rem 1rem 0;
+    background: var(--bg-color-content);
+    padding: 2rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+/* Menu */
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    background: var(--bg-color-menu);
+    width: 15rem;
+    height: 100%;
+    border-radius: 1rem 0 0 1rem;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+
+/* Fim da estilização do Menu */
+
+
+/* Estilização dos elementos dentro do Menu */
+
+
+/* Logo Menu */
+
+.menu .logo {
+    display: flex;
+    align-items: center;
+    color: var(--text-white);
+    border-bottom: solid 1px var(--bg-color-border);
+    width: 100%;
+}
+
+.menu .logo i {
+    font-size: 2rem;
+    padding: 0 0.3rem 0.5rem 0;
+}
+
+.menu .logo h3 {
+    font-weight: 300;
+}
+
+
+/* FIM LOGO MENU */
+
+
+/* ITEM 1 MENU */
+
+.menu .item1 {
+    background: var(--bg-color-border-avatar);
+    border-radius: 1rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0 0 0 0.5rem;
+}
+
+.menu .item1 .txt {
+    color: var(--text-white);
+}
+
+.menu .item1 .txt h4 {
+    font-weight: 400;
+}
+
+.menu .item1 .txt h6 {
+    font-weight: 400;
+}
+
+.menu .item1 .h2 h2 {
+    background: var(--bg-color-avatar);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu .item1 .h2 h2 {
+    font-weight: 400;
+}
+
+.menu .item1 .icon i {
+    color: var(--text-white);
+    padding: 0 0.5rem 0 0.5rem;
+}
+
+
+/* FIM ITEM 1 */
+
+
+/* ITEM 2 MENU */
+
+.menu .item2 {
+    width: 100%;
+}
+
+.menu .item2 nav ul li a {
+    color: var(--text-menu);
+}
+
+.menu .item2 nav ul li i {
+    font-size: 1.3rem;
+    padding: 0.5rem;
+}
+
+.menu .item2 nav ul li h5 {
+    font-weight: 200;
+    padding: 1.2rem 0 0 0.7rem;
+    color: var(--text-menu);
+}
+
+.menu .item2 nav ul li a {
+    transition: 0.5s;
+}
+
+.menu .item2 nav ul li:hover a i {
+    font-size: 1.3rem;
+    color: var(--text-white);
+}
+
+.menu .item2 nav ul li:hover a span {
+    font-size: 1.3rem;
+    color: var(--text-white);
+}
+
+
+/* FIM ITEM 2 */
+
+
+/* ITEM 3 */
+
+.menu .item3 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background: var(--bg-color-storage);
+    border-radius: 1rem;
+    height: 7rem;
+    width: 100%;
+    padding: 0 0 0 1rem;
+}
+
+.menu .item3 .txt2 {
+    width: 100%;
+}
+
+.menu .item3 #strong {
+    color: var(--text-white);
+    font-weight: 600;
+}
+
+.menu .item3 #standard {
+    color: var(--text-grey);
+    font-weight: 100;
+}
+
+
+/* FIM ITEM 3 */
+
+
+/* ITEM 4 */
+
+.menu .item4 {
+    border-top: solid 1px var(--bg-color-border);
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0 0 0.5rem;
+}
+
+.menu .item4 .img img {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+
+.menu .item4 .txt h4 {
+    font-weight: 500;
+    color: var(--text-white);
+}
+
+.menu .item4 .icon i {
+    color: var(--text-white);
+    padding: 0 0 0 1rem;
+}
+
+.menu .item4 .storage {
+    border: solid 1px white;
+}
+
+
+/* FIM ITEM 4 */
+
+
+/* GRID */
+
+
+/* INICIO ESTILIZAÇÃO DO FORM USUÁRIO */
+
+.content .titulo {
+    font-size: 3rem;
+}
+
+.container .content form {
+    flex-wrap: wrap;
+    width: 70rem;
+    display: flex;
+}
+
+.container .content form .campo {
+    display: flex;
+    margin: 2rem;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.container .content form .campo input {
+    width: 30rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.container .content form .button {
+    padding: 1rem;
+    background: var(--bg-color-button);
+    width: 10rem;
+    border-radius: 1rem;
+    color: var(--text-list2);
+    font-weight: 600;
+    font-size: 12pt;
+    margin: 0 0 3rem 4rem;
+}
+
+
+/* FIM ESTILIZAÇÃO DO FORM USUÁRIO */
