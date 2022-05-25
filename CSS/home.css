@@ -340,12 +340,14 @@ i {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
+
 .container .content .card1 .profile {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 1rem 2rem;
+  padding: 0 2rem;
   gap: 1rem;
 }
 
@@ -401,12 +403,14 @@ i {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
+
 .container .content .card2 .profile {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 1rem 2rem;
+  padding: 0 2rem;
   gap: 1rem;
 }
 
@@ -462,12 +466,14 @@ i {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
+
 .container .content .card3 .profile {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 1rem 2rem;
+  padding: 0 2rem;
   gap: 1rem;
 }
 
@@ -512,11 +518,85 @@ i {
 }
 
 .container .content .card3 .progress .bar {
-  width: 90%;
+  width: 70%;
   border-radius: 2rem;
   background: var(--bg-color-bar5);
 }
 /* Fim Card 3 */
+
+/* Início estlização Countries */
+.container .content .countries {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.container .content .countries .title {
+  padding: 1rem;
+}
+
+.container .content .countries .flag {
+  width: 100%;
+  display: flex;
+}
+
+.container .content .countries .flag .img {
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.container .content .countries .flag .img img {
+  width: 3rem;
+  height: 2.5rem;
+}
+
+.container .content .countries .flag .info {
+  display: flex;
+  width: 100%;
+}
+
+.container .content .countries .flag .info .country {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container .content .countries .flag .info .country h4 {
+  border-bottom: solid 1px var(--bg-color-border);
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.container .content .countries .flag .info .value {
+  width: 20%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container .content .countries .flag .info .value h4 {
+  border-bottom: solid 1px var(--bg-color-border);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.container .content .countries .button {
+  color: var(--text-menu);
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+/* Fim estilização do box Countries */
+
 /* -------------------------------------------------------------------------------------------------- */
 
 /* Início Media Query (Responsividade) */
@@ -702,5 +782,11 @@ i {
   .container .menu .login .icon {
     display: none;
   }
+  /* Fim Responsividade avatar de login */
+
+  /* Responsividade dos Flags Countries */
+
+  .container .content .countries .flag .img {
+    display: none;
+  }
 }
-/* Fim Responsividade avatar de login */
