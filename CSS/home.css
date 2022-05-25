@@ -142,6 +142,7 @@ i {
   display: flex;
   flex-direction: column;
   align-content: center;
+  color: var(--text-white);
 }
 
 .container .menu .profile .icon i {
