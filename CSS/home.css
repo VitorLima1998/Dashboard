@@ -597,6 +597,51 @@ i {
 }
 /* Fim estilização do box Countries */
 
+/* Início Estilização box Segmentation */
+.container .content .segmentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.container .content .segmentation .title {
+  padding: 1rem;
+}
+
+.container .content .segmentation .button {
+  color: var(--text-menu);
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+/* Fim estlização box Segmentation */
+
+/* Início Estlização box Satisfaction */
+.container .content .satisfaction {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.container .content .satisfaction .title {
+  padding: 1rem;
+}
+
+.container .content .satisfaction .button {
+  color: var(--text-menu);
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+/* Fim estlização box Satisfaction */
 /* -------------------------------------------------------------------------------------------------- */
 
 /* Início Media Query (Responsividade) */
