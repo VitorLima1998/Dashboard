@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./produto.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- <div class="menu">
+        <div class="logo">
+          <i class="bx bxl-nodejs"></i>
+          <h3>Corporation</h3>
+        </div>
+        <div class="item1">
+          <div class="h2">
+            <h2>TS</h2>
+          </div>
+          <div class="txt">
+            <h4>Dlex Designs</h4>
+            <h6>General Team</h6>
+          </div>
+          <div class="icon">
+            <i class="bx bx-expand-vertical"></i>
+          </div>
+        </div>
+        <div class="item2">
+          <nav>
+            <ul>
+              <li>
+                <a href="../HTML/home.html">
+                  <i class="bx bxs-dashboard"></i>
+                  <span>Dashboard</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="bx bxs-bar-chart-square"></i>
+                  <span>Overview</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="bx bxs-conversation"></i>
+                  <span>Chat</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="bx bxs-group"></i>
+                  <span>Team</span>
+                </a>
+              </li>
+
+              <li>
+                <h5>Shortcut</h5>
+              </li>
+
+              <li>
+                <a href="">
+                  <i class="bx bx-detail"></i>
+                  <span>Tasks</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="">
+                  <i class="bx bx-error"></i>
+                  <span>Reports</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="">
+                  <i class="bx bxs-cog"></i>
+                  <span>Settings</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="item3">
+          <div class="txt1">
+            <span id="strong">Storage</span>
+            <span id="standard">Upgrade</span>
+          </div>
+
+          <div class="txt2">
+            <span id="strong">3.4 GB</span>
+            <span id="standard">of 15 GB</span>
+          </div>
+        </div>
+        <div class="item4">
+          <div class="img">
+            <img src="../IMG/Stark icon.jpeg" alt="Stark icon" />
+          </div>
+          <div class="txt">
+            <h4>Tony Stark</h4>
+          </div>
+          <div class="icon">
+            <i class="bx bx-expand-vertical"></i>
+          </div>
+        </div>
+      </div> -->
+      <div class="content">
+        <div class="form">
+          <div class="header">
+            <h2>Cadastro de Produtos</h2>
+          </div>
+
+          <form>
+            <div class="imagem">
+              <div class="text">
+                <a href="">Adicionar Imagem</a>
+              </div>
+            </div>
+
+            <div class="input1">
+              <div class="campo nome">
+                <label for="nome">Nome:</label>
+                <input
+                  type="text"
+                  id="nome"
+                  name="nome"
+                  placeholder="Digite o nome do produto"
+                  required
+                />
+              </div>
+
+              <div class="descricao">
+                <label for="w3review">Descrição:</label>
+
+                <textarea id="w3review" name="w3review" rows="5" cols="105">
+                </textarea>
+              </div>
+            </div>
+
+            <div class="input2">
+              <div class="campo fornecedor">
+                <label for="nome">Fornecedor (Opcional):</label>
+                <input
+                  type="text"
+                  id="fornecedor"
+                  name="fornecedor"
+                  placeholder="Digite o nome do Fornecedor"
+                  required
+                />
+              </div>
+
+              <div class="campo marca">
+                <label for="nome">Marca (Opcional):</label>
+                <input
+                  type="text"
+                  id="marca"
+                  name="marca"
+                  placeholder="Digite a marca do produto"
+                  required
+                />
+              </div>
+
+              <div class="campo categoria">
+                <label for="nome">Categoria (Opcional):</label>
+                <input
+                  type="text"
+                  id="categoria"
+                  name="categoria"
+                  placeholder="Digite a categoria do produto"
+                  required
+                />
+              </div>
+
+              <div class="campo precominimo">
+                <label for="nome">Preço Mínimo:</label>
+                <input
+                  type="text"
+                  id="precominimo"
+                  name="precominimo"
+                  placeholder="Digite o preço mínimo do produto"
+                  required
+                />
+              </div>
+
+              <div class="campo precofornecedor">
+                <label for="nome">Preço do Fornecedor:</label>
+                <input
+                  type="text"
+                  id="precofornecedor"
+                  name="precofornecedor"
+                  placeholder="Digite o preço de custo do fornecedor"
+                  required
+                />
+              </div>
+
+              <div class="campo custo">
+                <label for="nome">Custo:</label>
+                <input
+                  type="text"
+                  id="custo"
+                  name="custo"
+                  placeholder="Digite o custo do produto"
+                  required
+                />
+              </div>
+
+              <div class="campo codigo">
+                <label for="nome">Código (Opcional):</label>
+                <input
+                  type="text"
+                  id="codigo"
+                  name="codigo"
+                  placeholder="Digite o código do produto"
+                  required
+                />
+              </div>
+
+              <div class="campo quantidade">
+                <label for="nome">Quantidade:</label>
+                <input
+                  type="text"
+                  id="quantidade"
+                  name="quantidade"
+                  placeholder="Digite a quantidade em estoque"
+                  required
+                />
+              </div>
+
+              <div class="campo unidade">
+                <label for="nome">Unidade:</label>
+                <input
+                  type="text"
+                  id="unidade"
+                  name="unidade"
+                  placeholder="Unidade, Kilo, Peça, etc.."
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="input3">
+              <button type="button">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

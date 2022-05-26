@@ -258,390 +258,101 @@ i {
   width: 4rem;
   border-radius: 50%;
 }
-/* Fim da estilização avatar de login */
-
-/* Início Grid Content */
+/* -------------------------------------------------------------------------------------------------- */
+/* Formulário */
+/* Estilização do GRID */
 .container .content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 5rem 1fr repeat(2, 2fr);
+  grid-template-rows: 5rem repeat(2, 1fr) 3fr;
   background: var(--bg-color-content);
   border-radius: 0 2rem 2rem 0;
   gap: 2rem;
   padding: 2rem;
   width: 100%;
 }
+/* Fim da estilização do grid */
 
-.container .content .box {
-  border: solid 1px var(--bg-color-border);
-  border-radius: 1rem;
-}
-
+/* Estilização do Header */
 .container .content .header {
   grid-column: 1/4;
   grid-row: 1/2;
-}
-
-.container .content .chart {
-  grid-column: 1/3;
-  grid-row: 3/4;
-}
-/* Fim Grid content */
-
-/* Estilização do header */
-.container .content .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 1rem;
-}
-
-.container .content .header .title {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
-}
-
-.container .content .header .title h3 {
-  background: var(--bg-color-span);
-  color: var(--text-orange);
-  border: solid 1px var(--text-orange);
-  font-weight: 300;
-  padding: 0.3rem;
-  border-radius: 1.5rem;
-}
-
-.container .content .header .title h2 {
-  font-size: 2.5rem;
-  font-weight: 300;
-}
-
-.container .content .header .input {
-  display: flex;
-  align-items: center;
-}
-
-.container .content .header .input i {
-  font-size: 2.5rem;
-  border-radius: 1rem 0 0 1rem;
-  background: var(--bg-color-icon);
-}
-
-.container .content .header .input input {
-  height: 2.5rem;
-  border-radius: 0 1rem 1rem 0;
-}
-/* Fim estilização do header */
-
-/* Início da estilização dos cards */
-/* Card 1 */
-.container .content .card1 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.container .content .card1 .profile {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 0 2rem;
-  gap: 1rem;
-}
-
-.container .content .card1 .profile .avatar img {
-  width: 5rem;
-  height: 5rem;
-  border-radius: 50%;
-}
-
-.container .content .card1 .profile .text {
-  width: 60%;
-}
-
-.container .content .card1 .profile .icon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: var(--text-green);
-}
-
-.container .content .card1 .profile .icon i {
   font-size: 2rem;
 }
+/* Fim da Estilização do Header */
 
-.container .content .card1 .bar {
+/* Estilização da div da imagem */
+.container .content .image {
+  grid-column: 1/2;
+  grid-row: 2/4;
   display: flex;
-  flex-wrap: wrap;
-  padding: 0 0 0 2rem;
-  width: 100%;
+  align-items: flex-end;
+  border: solid 1px var(--bg-color-border);
+  border-radius: 1rem;
+  overflow: hidden;
 }
 
-.container .content .card1 .bar .text h4 {
-  font-size: 1rem;
-}
-
-.container .content .card1 .bar .progress {
-  display: flex;
-  width: 90%;
-  height: 0.4rem;
-  border-radius: 2rem;
-  background: var(--bg-color-bar2);
-}
-
-.container .content .card1 .progress .bar {
-  width: 30%;
-  border-radius: 2rem;
-  background: var(--bg-color-bar5);
-}
-/* Fim Card 1 */
-
-/* Card 2 */
-.container .content .card2 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.container .content .card2 .profile {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 0 2rem;
-  gap: 1rem;
-}
-
-.container .content .card2 .profile .avatar img {
-  width: 5rem;
-  height: 5rem;
-  border-radius: 50%;
-}
-
-.container .content .card2 .profile .text {
-  width: 60%;
-}
-
-.container .content .card2 .profile .icon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: var(--text-red);
-}
-
-.container .content .card2 .profile .icon i {
-  font-size: 2rem;
-}
-
-.container .content .card2 .bar {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 0 0 2rem;
-  width: 100%;
-}
-
-.container .content .card2 .bar .text h4 {
-  font-size: 1rem;
-}
-
-.container .content .card2 .bar .progress {
-  display: flex;
-  width: 90%;
-  height: 0.4rem;
-  border-radius: 2rem;
-  background: var(--bg-color-bar2);
-}
-
-.container .content .card2 .progress .bar {
-  width: 70%;
-  border-radius: 2rem;
-  background: var(--bg-color-bar5);
-}
-/* Fim Card 2 */
-
-/* Card 3 */
-.container .content .card3 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.container .content .card3 .profile {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 0 2rem;
-  gap: 1rem;
-}
-
-.container .content .card3 .profile .avatar img {
-  width: 5rem;
-  height: 5rem;
-  border-radius: 50%;
-}
-
-.container .content .card3 .profile .text {
-  width: 60%;
-}
-
-.container .content .card3 .profile .icon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: var(--text-green);
-}
-
-.container .content .card3 .profile .icon i {
-  font-size: 2rem;
-}
-
-.container .content .card3 .bar {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 0 0 2rem;
-  width: 100%;
-}
-
-.container .content .card3 .bar .text h4 {
-  font-size: 1rem;
-}
-
-.container .content .card3 .bar .progress {
-  display: flex;
-  width: 90%;
-  height: 0.4rem;
-  border-radius: 2rem;
-  background: var(--bg-color-bar2);
-}
-
-.container .content .card3 .progress .bar {
-  width: 70%;
-  border-radius: 2rem;
-  background: var(--bg-color-bar5);
-}
-/* Fim Card 3 */
-
-/* Início estlização Countries */
-.container .content .countries {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.container .content .countries .title {
-  padding: 1rem;
-}
-
-.container .content .countries .flag {
-  width: 100%;
-  display: flex;
-}
-
-.container .content .countries .flag .img {
-  width: 5rem;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.container .content .countries .flag .img img {
-  width: 3rem;
-  height: 2.5rem;
-}
-
-.container .content .countries .flag .info {
-  display: flex;
-  width: 100%;
-}
-
-.container .content .countries .flag .info .country {
-  width: 80%;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.container .content .countries .flag .info .country h4 {
-  border-bottom: solid 1px var(--bg-color-border);
-  display: flex;
-  align-items: center;
-  width: 100%;
-}
-
-.container .content .countries .flag .info .value {
-  width: 20%;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.container .content .countries .flag .info .value h4 {
-  border-bottom: solid 1px var(--bg-color-border);
+.container .content .image form {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-}
-
-.container .content .countries .button {
-  color: var(--text-menu);
   width: 100%;
   height: 3rem;
+  background: var(--bg-color-border);
+}
+/* Fim da estilização da div da imagem */
+
+.container .content .box1 {
+  grid-column: 2/4;
+  grid-row: 2/4;
+  padding: 1rem;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  padding: 1rem;
+  flex-wrap: wrap;
 }
-/* Fim estilização do box Countries */
 
-/* Início Estilização box Segmentation */
-.container .content .segmentation {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.container .content .box1 .nome {
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.container .content .box1 .nome input {
+  font-size: 1.5rem;
+  border-radius: 1rem;
   width: 100%;
 }
 
-.container .content .segmentation .title {
-  padding: 1rem;
+.container .content .box1 .descricao {
+  font-size: 1.5rem;
 }
 
-.container .content .segmentation .button {
-  color: var(--text-menu);
-  width: 100%;
-  height: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 1rem;
-}
-/* Fim estlização box Segmentation */
-
-/* Início Estlização box Satisfaction */
-.container .content .satisfaction {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
+.container .content .box2 {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  border: solid 1px;
 }
 
-.container .content .satisfaction .title {
-  padding: 1rem;
+.container .content .box3 {
+  grid-column: 2/3;
+  grid-row: 4/5;
+  border: solid 1px;
 }
 
-.container .content .satisfaction .button {
-  color: var(--text-menu);
-  width: 100%;
-  height: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 1rem;
+.container .content .box4 {
+  grid-column: 3/4;
+  grid-row: 4/5;
+  border: solid 1px;
 }
-/* Fim estlização box Satisfaction */
+/* Início Header */
+
+/* Fim Header */
+
+/* Início Form */
+
+/* Fim formulário */
 /* -------------------------------------------------------------------------------------------------- */
 
 /* Início Media Query (Responsividade) */
@@ -696,7 +407,7 @@ i {
 /* Fim Media Query telas menores */
 
 /* Início Media Query telas médias */
-@media (min-width: 250px) and (max-width: 1180px) {
+@media (min-width: 250px) and (max-width: 1000px) {
   .container {
     display: flex;
     height: 100vh;
@@ -704,55 +415,20 @@ i {
     padding: 0;
   }
 
-  .container .content {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 5rem repeat(2, 1fr) repeat(3, 2fr);
+  .container .content .box1 {
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: repeat(2, 1fr);
   }
 
-  .container .content .header {
-    grid-column: 1/3;
-    grid-row: 1/2;
+  .container .content .form form .imagem {
+    display: none;
   }
 
-  .container .content .card1 {
-    grid-column: 1/2;
-    grid-row: 2/3;
+  .container .content .box2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
   }
 
-  .container .content .card2 {
-    grid-column: 2/3;
-    grid-row: 2/3;
-  }
-
-  .container .content .card3 {
-    grid-column: 1/2;
-    grid-row: 3/4;
-  }
-
-  .container .content .chart {
-    grid-column: 1/3;
-    grid-row: 4/5;
-  }
-
-  .container .content .countries {
-    grid-column: 1/2;
-    grid-row: 5/6;
-  }
-
-  .container .content .segmentation {
-    grid-column: 2/3;
-    grid-row: 5/6;
-  }
-
-  .container .content .satisfaction {
-    grid-column: 1/2;
-    grid-row: 6/7;
-  }
-
-  .container .content .component {
-    grid-column: 2/3;
-    grid-row: 6/7;
-  }
   /* Fim da responsividade do Content (GRID) */
 
   /* Responsividade do Menu */
@@ -828,10 +504,4 @@ i {
     display: none;
   }
   /* Fim Responsividade avatar de login */
-
-  /* Responsividade dos Flags Countries */
-
-  .container .content .countries .flag .img {
-    display: none;
-  }
 }
